@@ -1,0 +1,89 @@
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 4fr 4fr;
+    grid-template-rows: 1fr 5fr 5fr 2fr;
+    height: 90vh;
+}
+
+.box.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    color: aliceblue;
+    background-color: black;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.box.menu{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 20px;
+}
+
+.box.menu a{
+    color: aliceblue;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+.box.hero{
+    background: rgb(120, 215, 247)url(https://media.istockphoto.com/id/1381637603/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=w64j3fW8C96CfYo3kbi386rs_sHH_6BGe8lAAAFS-y4=);
+
+    text-align: center;
+    padding: 100px 20px;
+    color: aliceblue;
+    grid-column: 1/4;
+    grid-row: 5px;}
+
+.box.hero p{
+    font-size: 20px;
+}
+.box.about{
+    grid-column: 1/3;
+    grid-row: 3/4;
+    background: rgb(4, 4, 109);
+    color: rgb(223, 227, 230);
+    padding: 40px;
+} 
+
+.image{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    background: url(https://thumbs.dreamstime.com/b/idyllic-summer-landscape-clear-mountain-lake-alps-45054687.jpg);
+}
+.offer{
+    grid-column: 1/3;
+    grid-row: 4/5;
+    background: yellow;
+    text-align: center;
+}
+.box.offer h3{
+    font-size: 24px;
+    margin-top: 0;
+}
+.box.offer button{
+    padding: 13px 19px;
+    font-weight: bold;
+    background: blue;
+    color: aliceblue;
+}
+.contact{
+    grid-column: 3/4;
+    grid-row: 4/5;
+    background: greenyellow;
+    padding: 40px;
+    color: aliceblue;
+}
+.contact h3{
+    margin-top: 0;
+}
